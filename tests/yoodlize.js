@@ -14,7 +14,6 @@ module.exports = {
             browser
                 .waitForElementPresent('(//div[@class="sc-bwzfXH sc-iQNlJl cuvCCm sc-bdVaJa isrEgr"])')
                 .click(`(//div[@class="sc-jqCOkK djSgtl sc-gqjmRU fmVgeN"])[${x}]`)
-                .pause(2000)
                 .verify.visible('(//div[@class="sc-jKVCRD jSqgxr"])')
                 .back();
         }
@@ -27,7 +26,6 @@ module.exports = {
             browser
                 .waitForElementPresent('(//div[@class="sc-bwzfXH sc-iQNlJl cuvCCm sc-bdVaJa isrEgr"])')
                 .click(`(//div[contains(text(), "${category[x]}")])[2]`)
-                .pause(2000)
                 .verify.visible('(//div[@class="sc-jKVCRD jSqgxr"])')
                 .back();
         }
@@ -43,7 +41,6 @@ module.exports = {
             .useXpath()
             .waitForElementPresent('(//div[@class="sc-bwzfXH sc-iQNlJl cuvCCm sc-bdVaJa isrEgr"])')
             .setValue('//input', ['Steam Controller', browser.Keys.ENTER])
-            .pause(2000)
             .verify.visible('(//div[@class="sc-jKVCRD jSqgxr"])')
     },
 }
