@@ -32,7 +32,6 @@ module.exports = {
         browser
             .waitForElementPresent('(//div[@class="sc-bwzfXH sc-iQNlJl cuvCCm sc-bdVaJa isrEgr"])')
             .click('(//div[contains(text(), "DVDS")])')
-            .pause(2000)
             .verify.visible('(//div[@class="sc-jKVCRD jSqgxr"])')
             .back();
     },
