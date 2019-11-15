@@ -1,6 +1,7 @@
 var yolo = {}
 module.exports = {
     beforeEach: browser => {
+        // use just before for Lesson 8 tests
         // browser
         yolo = browser.page.yoodlizePage();
         yolo
